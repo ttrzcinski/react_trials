@@ -1,12 +1,13 @@
-import React, { FC } from 'react';
+import React from 'react';
 import { ContactWrapper } from './Contact.styled';
 
 interface ContactProps {}
 
-const Contact: FC<ContactProps> = () => (
- <ContactWrapper data-testid="Contact">
-    Contact Component
- </ContactWrapper>
+const Contact: React.FC<ContactProps> = () => (
+   <div>
+      <h1>Contact</h1>
+      <a href='mailto:trzcinski.tomasz.1988@gmail.com'>Write to me.</a>
+   </div>
 );
 
 export default Contact;
